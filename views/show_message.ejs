@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/header.css" />
+    <link rel="stylesheet" href="/css/body.css" />
+    <title>Person result</title>
+  </head>
+  <body>
+    <%- include ('partials/header')%> <% if (type == 'error') { %>
+    <h3><%= message %></h3>
+    <% } else { %>
+    <h3>New person added!</h3>
+    <p>
+      name: <%= payload.name %><br />
+      age: <%= payload.age %><br />
+      nationality: <%= payload.nationality %>
+    </p>
+    <% } %>
+  </body>
+</html>

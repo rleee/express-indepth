@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/header.css" />
+    <link rel="stylesheet" href="/css/body.css" />
+    <title><%= title %></title>
+  </head>
+  <body>
+    <%- include ('partials/header')%> <% if (user.name) { %>
+    <h3>Hello, <%= user.name %></h3>
+    <% } else { %>
+    <h3>wanna <a href="<%= url %>">sign up?</a></h3>
+    <% } %> <%- include ('partials/form')%>
+
+    <p>visit <a href="<%= url %>">url</a> for more information.</p>
+  </body>
+</html>

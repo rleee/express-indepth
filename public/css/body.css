@@ -1,0 +1,15 @@
+h3 {
+  margin: 0;
+}
+
+form {
+  margin: 10px;
+}
+
+.form-group {
+  margin-bottom: 5px;
+}
+
+.width {
+  width: 200px;
+}
